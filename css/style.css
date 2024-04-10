@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    width: 100%;
+    display: flex;
+    background-color: #E8D9D6;
+    box-sizing: border-box;
+}
+.container-info{
+    width: 50%;
+    margin-left: 5%;
+}
+.container-info-img{
+    position: relative;
+    top: 9.5vh;
+    left: 0.5vw;
+    width: 12.6vw;
+}
+.container-info {
+    position: relative;
+    top: -7vh;
+}
+.container-info h1{
+    font-size: 7vw;
+    margin: 0;
+}
+.container-info p{
+    font-size: 1.7vw;
+    margin: 0;
+}
+.container-info button{
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 1.7% 4%;
+    font-size: 1.1vw;
+    border-radius: 35px;
+    margin-top: 3vh;
+}
+.container-images{
+    /*width: min(100% - 80px, 500px);*/
+    width: 50%;
+}
+.container-images-fondo{
+    width: 46.5vw;
+}
+.container-images-mancha{
+    width: 40.6vw;
+    position: absolute;
+    top: 25vh;
+    right: 4Vw;
+}
+.container-images-bebida{
+    width: 23.6vw;
+    position: absolute;
+    right: 12vw;
+    top: 11vh;
+}
+.footer{
+    background-color: #E8D9D6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-bar{
+    padding-right: 4%;
+    display: flex;
+    margin: 1vw;
+    background-color: #fffdfc;
+    align-items: center;
+    border-radius: 90px;
+}
+.footer-bar img{
+    margin-right: 5%;
+}
+.footer-bar h2{
+    margin: 4% 0 0;
+    font-size: 35px;
+}
+.footer-bar p{
+    font-size: 18px;
+    margin: 0;
+}
+@media (max-width:1600px) {
+    .container-info-img{
+        top: 5vh;
+    }
+    .container-info{
+        margin-top: 35px;
+    }
+    .container-info h1{
+        font-size: 7.5vw;
+    }
+    .container-info p{
+        font-size: 1.9vw;
+    }
+    .container-info button{
+        font-size: 1.7vw;
+    }
+    .container-images-mancha{
+        top: 13vh;
+    }
+    .container-images-bebida{
+        width: 23.6vw;
+        top: 6vh;
+    }
+    .footer-bar{
+        border-radius: 90px;
+    }
+    .footer-bar img{
+        width: 13vw;
+        border-radius: 90px;
+    }
+    .footer-bar h2{
+        font-size: 30px;
+    }
+    .footer-bar p{
+        font-size: 12px;
+    }
+}
+@media (max-width:768px) {
+    .container{
+
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-info{
+        width: 100%;
+    }
+    .container-images{
+        width: 100%;
+    }
+    .container-info h1{
+        font-size: 70px;
+    }
+    .container-info p{
+        font-size: 15px;
+    }
+    .container-images-mancha{
+        top: 39vh;
+        left: 29vw;
+    }
+    .container-images-bebida{
+        width: 23.6vw;
+        top: 35vh;
+        left: 38vw;
+    }
+    .footer{
+        flex-direction: column;
+    }
+}
