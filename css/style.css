@@ -76,6 +76,8 @@
     align-items: center;
 }
 .footer-bar{
+    
+    cursor: pointer;
     padding-right: 4%;
     display: flex;
     margin: 1vw;
@@ -83,14 +85,19 @@
     align-items: center;
     border-radius: 90px;
 }
-.footer-bar:hover{
-    width: 400px;
-    position: relative;
-    bottom: 30px;
+.footer-bar img:hover{
+    scale: 1.2;
+    transition-duration: 2s;
+    transition-property: all;
 }
+
 .footer-bar:first-of-type:hover {
     background-image: linear-gradient(rgb(250, 245, 239),rgb(250, 224, 224),rgb(247, 171, 171));
     box-shadow: 4px 4px 0 rgb(163, 29, 29);
+}
+.move:hover{
+    background-image: linear-gradient(rgb(236, 240, 248),rgb(229, 235, 248),rgb(139, 183, 248));
+    box-shadow: 4px 4px 0 blue;
 }
 .footer-bar:last-of-type:hover{
     background-image: linear-gradient(rgb(250, 255, 250),rgb(219, 250, 221),rgb(149, 253, 135));
